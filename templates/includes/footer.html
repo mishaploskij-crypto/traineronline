@@ -1,0 +1,43 @@
+<footer class="bg-dark text-white mt-5">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>ТренерОнлайн</h5>
+                <p>Платформа для поиска профессиональных тренеров и обмена знаниями о фитнесе и здоровом образе жизни.</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Быстрые ссылки</h5>
+                <ul class="list-unstyled">
+                    <li><a href="{% url 'home' %}" class="text-white text-decoration-none">Главная</a></li>
+                    <li><a href="{% url 'posts:post_list' %}" class="text-white text-decoration-none">Блог</a></li>
+                    <li><a href="{% url 'trainer_list' %}" class="text-white text-decoration-none">Тренеры</a></li>
+                    <li><a href="{% url 'about' %}" class="text-white text-decoration-none">О нас</a></li>
+                    <li><a href="{% url 'contact' %}" class="text-white text-decoration-none">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Контакты</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-envelope me-2"></i> info@тренеронлайн.ру</li>
+                    <li><i class="fas fa-phone me-2"></i> +7 (999) 123-45-67</li>
+                    <li><i class="fas fa-map-marker-alt me-2"></i> Москва, ул. Тренировочная, 10</li>
+                </ul>
+                <div class="mt-3">
+                    <a href="#" class="text-white me-3"><i class="fab fa-vk fa-2x"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-telegram fa-2x"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-instagram fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr class="bg-white">
+        <div class="row">
+            <div class="col-md-6">
+                <p>&copy; {% now "Y" %} ТренерОнлайн. Все права защищены.</p>
+            </div>
+            <div class="col-md-6 text-end">
+                <a href="#" class="text-white text-decoration-none me-3">Политика конфиденциальности</a>
+                <a href="#" class="text-white text-decoration-none">Пользовательское соглашение</a>
+            </div>
+        </div>
+    </div>
+</footer>
